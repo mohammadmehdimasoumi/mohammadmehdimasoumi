@@ -98,9 +98,8 @@
 
 ---
 <div align="center">
-  <img width="96%" src="https://raw.githubusercontent.com/mohammadmehdimasoumi/mohammadmehdimasoumi/output/profile-3d-contrib/profile-night-rainbow.svg"/>
+  <img width="96%" src="hacker-explosion.svg"/>
 </div>
-
 ---
 
 ### `> ANALYTICS`
