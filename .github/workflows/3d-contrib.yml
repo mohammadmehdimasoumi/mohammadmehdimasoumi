@@ -7,18 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Write settings file
+        run: |
+          echo '{"backgroundColor":"#0d0d0d","foregroundColor":"#9d00ff","contributionColorArray":["#0d0d0d","#2a0050","#4a0080","#7c3aed","#9d00ff"],"quarterPipeColor":"#4a0080","baseColor":"#1a0030"}' > /tmp/settings.json
       - uses: yoshi389111/github-profile-3d-contrib@0.7.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: mohammadmehdimasoumi
-          SETTING_JSON: |
-            {
-              "backgroundColor": "#0d0d0d",
-              "foregroundColor": "#9d00ff",
-              "contributionColorArray": ["#0d0d0d","#2a0050","#4a0080","#7c3aed","#9d00ff"],
-              "quarterPipeColor": "#4a0080",
-              "baseColor": "#1a0030"
-            }
+          SETTING_JSON: /tmp/settings.json
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
