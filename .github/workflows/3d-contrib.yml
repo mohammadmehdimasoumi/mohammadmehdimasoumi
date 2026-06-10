@@ -1,0 +1,27 @@
+name: 3D Contrib
+on:
+  schedule: [{cron: "0 2 * * *"}]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: mohammadmehdimasoumi
+          SETTING_JSON: |
+            {
+              "backgroundColor": "#0d0d0d",
+              "foregroundColor": "#9d00ff",
+              "contributionColorArray": ["#0d0d0d","#2a0050","#4a0080","#7c3aed","#9d00ff"],
+              "quarterPipeColor": "#4a0080",
+              "baseColor": "#1a0030"
+            }
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: profile-3d-contrib
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
