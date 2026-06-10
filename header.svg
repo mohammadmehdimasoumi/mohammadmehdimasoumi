@@ -1,0 +1,142 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050508;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0a0015;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#050508;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Purple glow filter -->
+    <filter id="purpleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Intense glow for name -->
+    <filter id="nameGlow" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feGaussianBlur stdDeviation="12" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="900" height="3" patternUnits="userSpaceOnUse">
+      <rect width="900" height="1" fill="rgba(100,0,180,0.06)"/>
+      <rect y="1" width="900" height="2" fill="transparent"/>
+    </pattern>
+
+    <!-- Glitch clip paths -->
+    <clipPath id="glitch1">
+      <rect x="0" y="55" width="900" height="28"/>
+    </clipPath>
+    <clipPath id="glitch2">
+      <rect x="0" y="90" width="900" height="20"/>
+    </clipPath>
+    <clipPath id="glitch3">
+      <rect x="0" y="72" width="900" height="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="900" height="200" fill="url(#bgGrad)"/>
+
+  <!-- Scanlines overlay -->
+  <rect width="900" height="200" fill="url(#scanlines)" opacity="0.8"/>
+
+  <!-- Top border line with pulse -->
+  <line x1="0" y1="1" x2="900" y2="1" stroke="#4a0080" stroke-width="1" opacity="0.6"/>
+  <line x1="0" y1="2" x2="900" y2="2" stroke="#9d00ff" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Bottom border line -->
+  <line x1="0" y1="198" x2="900" y2="198" stroke="#4a0080" stroke-width="1" opacity="0.6"/>
+  <line x1="0" y1="199" x2="900" y2="199" stroke="#9d00ff" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Corner brackets -->
+  <g stroke="#6a00cc" stroke-width="1.5" fill="none" opacity="0.8">
+    <polyline points="0,0 0,18 18,18"/>
+    <polyline points="882,0 900,0 900,18"/>
+    <polyline points="0,182 0,200 18,200"/>
+    <polyline points="882,200 900,200 900,182"/>
+  </g>
+
+  <!-- Subtle vertical grid lines -->
+  <line x1="60" y1="0" x2="60" y2="200" stroke="#2a0050" stroke-width="0.5" opacity="0.4"/>
+  <line x1="840" y1="0" x2="840" y2="200" stroke="#2a0050" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- System prefix label -->
+  <text x="72" y="38" font-family="'Courier New', monospace" font-size="11" fill="#4a0080" letter-spacing="4" opacity="0.9">
+    &#x25B6; SYSTEM::IDENTITY_MODULE — BOOT SEQUENCE COMPLETE
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="3.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Horizontal rule under prefix -->
+  <line x1="72" y1="44" x2="828" y2="44" stroke="#2a0050" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- === MAIN NAME === -->
+  <!-- Shadow layer (deep purple, offset) -->
+  <text x="452" y="108" font-family="'Courier New', monospace" font-size="38" font-weight="bold"
+        fill="#1a0035" text-anchor="middle" letter-spacing="8">
+    MOHAMMAD MEHDI MASOUMI
+  </text>
+
+  <!-- Glitch layer 1 — shifted right, cyan tint -->
+  <text x="456" y="107" font-family="'Courier New', monospace" font-size="38" font-weight="bold"
+        fill="#00ffff" text-anchor="middle" letter-spacing="8" clip-path="url(#glitch1)" opacity="0.25">
+    MOHAMMAD MEHDI MASOUMI
+    <animate attributeName="x" values="456;462;456;448;456" dur="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.25;0;0;0;0.15;0;0" dur="4.2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Glitch layer 2 — shifted left, red tint -->
+  <text x="448" y="109" font-family="'Courier New', monospace" font-size="38" font-weight="bold"
+        fill="#ff00aa" text-anchor="middle" letter-spacing="8" clip-path="url(#glitch2)" opacity="0.2">
+    MOHAMMAD MEHDI MASOUMI
+    <animate attributeName="x" values="448;442;448;454;448" dur="3.7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0;0.2;0;0;0;0.1;0;0" dur="3.7s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Main name — glowing purple -->
+  <text x="450" y="108" font-family="'Courier New', monospace" font-size="38" font-weight="bold"
+        fill="#c084fc" text-anchor="middle" letter-spacing="8" filter="url(#nameGlow)">
+    MOHAMMAD MEHDI MASOUMI
+    <animate attributeName="fill" values="#c084fc;#e040fb;#c084fc;#9d00ff;#c084fc" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="letter-spacing" values="8;8.5;8;7.5;8" dur="7s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- === SUBTITLE === -->
+  <!-- Typing cursor effect line -->
+  <text x="450" y="140" font-family="'Courier New', monospace" font-size="13" font-weight="normal"
+        fill="#7c3aed" text-anchor="middle" letter-spacing="5" filter="url(#purpleGlow)">
+    ML SYSTEMS  ·  ALGORITHMS  ·  LINUX KERNEL  ·  AI ARCHITECTURE
+    <animate attributeName="opacity" values="1;0.6;1;0.7;1" dur="6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Blinking cursor -->
+  <rect x="768" y="128" width="9" height="14" fill="#9d00ff" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom status bar -->
+  <rect x="0" y="168" width="900" height="22" fill="#07000f" opacity="0.7"/>
+  <line x1="0" y1="168" x2="900" y2="168" stroke="#3a0060" stroke-width="0.8"/>
+
+  <text x="72" y="183" font-family="'Courier New', monospace" font-size="9.5" fill="#4a0080" letter-spacing="2">
+    [  STATUS: ACTIVE  ]  [  ARCH LINUX  ]  [  PYTHON · C++  ]  [  OPEN TO COLLAB  ]
+    <animate attributeName="opacity" values="1;0.5;1" dur="4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Status indicator dot -->
+  <circle cx="52" cy="180" r="3.5" fill="#9d00ff">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="3.5;4.5;3.5" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="52" cy="180" r="6" fill="none" stroke="#6a00cc" stroke-width="0.8" opacity="0.4">
+    <animate attributeName="r" values="6;9;6" dur="1.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>
