@@ -1,16 +1,56 @@
-## Hi there 👋
+# Mohammad Mehdi Masoumi
 
-<!--
-**mohammadmehdimasoumi/mohammadmehdimasoumi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Computer Engineering Student  
+🤖 Machine Learning Enthusiast  
+🐍 Python & C++ Developer  
+🐧 Linux (Arch) User  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🚀 About Me
+I am a Computer Engineering student focused on Machine Learning, Software Engineering, and Linux systems.
+
+I enjoy building practical ML projects, improving my programming skills, and contributing to open-source projects.
+
+---
+
+## 🧠 Tech Stack
+
+### 💻 Programming Languages
+Python • C++
+
+### 🤖 Machine Learning & Data Science
+NumPy • Pandas • SciPy • Scikit-learn • Streamlit
+
+### 🧩 Core Concepts
+Machine Learning • Data Structures & Algorithms • OOP
+
+### 🛠 Tools & OS
+Linux (Arch) • Git • GitHub • VS Code • PyCharm • CLion • Vim
+
+---
+
+## 🎯 Current Goals
+- Build production-ready ML projects  
+- Master Classical Machine Learning  
+- Learn Deep Learning fundamentals  
+- Improve Linux & Software Engineering skills  
+- Contribute to Open Source  
+
+---
+
+## 🎬 Featured Project
+
+### Hybrid Movie Recommendation System
+A machine learning-based recommender system combining collaborative filtering and content-based filtering.
+
+**Tech:** Python • Pandas • NumPy • SciPy • Scikit-learn • Streamlit  
+
+🔗 https://github.com/mohammadmehdimasoumi/hybrid-movie-recommender
+
+---
+
+## 📫 Contact
+Email: mohammadmehdii@proton.me  
+GitHub: https://github.com/mohammadmehdimasoumi  
+Instagram: https://instagram.com/ctonm
