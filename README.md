@@ -76,7 +76,7 @@
 
 <div align="center">
 
-[![hybrid-movie-recommender](https://github-readme-stats.vercel.app/api/pin/?username=mohammadmehdimasoumi&repo=hybrid-movie-recommender&bg_color=0d0d0d&title_color=9d00ff&text_color=c084fc&icon_color=7c3aed&border_color=4a0080)](https://github.com/mohammadmehdimasoumi/hybrid-movie-recommender)
+[![iran-stock-signal-detector](https://github-readme-stats.vercel.app/api/pin/?username=mohammadmehdimasoumi&repo=iran-stock-signal-detector&bg_color=0d0d0d&title_color=9d00ff&text_color=c084fc&icon_color=7c3aed&border_color=4a0080)](https://github.com/mohammadmehdimasoumi/iran-stock-signal-detector)
 
 </div>
 
