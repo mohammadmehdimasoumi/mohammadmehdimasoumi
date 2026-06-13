@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="header.svg" width="100%"/>
 </div>
@@ -136,6 +135,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-0d0d0d?style=for-the-badge&logo=github&logoColor=9d00ff)](https://github.com/mohammadmehdimasoumi)
 [![Instagram](https://img.shields.io/badge/Instagram-0d0d0d?style=for-the-badge&logo=instagram&logoColor=9d00ff)](https://instagram.com/ctonm)
+[![PyPI](https://img.shields.io/badge/PyPI-0d0d0d?style=for-the-badge&logo=pypi&logoColor=9d00ff)](https://pypi.org/user/masoumi)
 
 <br/>
 
